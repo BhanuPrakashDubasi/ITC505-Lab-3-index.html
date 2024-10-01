@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - How to Include a Custom Font</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the custom font */
+        body {
+            font-family: 'Monoton', cursive;
+            background-color: #fafafa;
+            color: #444;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c0392b;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-left: 4px solid #c0392b;
+            font-family: monospace;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Including Custom Fonts in Web Design</h1>
+
+    <p>
+        Custom fonts enhance the visual appeal of a webpage and can convey a unique personality. Using a web font service like Google Fonts allows you to easily integrate a wide variety of typefaces into your site. Here’s how to include a custom font in your project.
+    </p>
+
+    <h2>Steps to Include a Custom Font</h2>
+
+    <ol>
+        <li>Visit <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> and browse the available fonts. We’ll use the <strong>Monoton</strong> font for this example.</li>
+        <li>Copy the provided link to include the font in your HTML file’s <code>&lt;head&gt;</code> section.</li>
+        <li>Use the <code>font-family</code> property in your CSS to apply the custom font to your desired HTML elements.</li>
+    </ol>
+
+    <pre>
+    &lt;link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"&gt;
+
+    body {
+        font-family: 'Monoton', cursive;
+    }
+    </pre>
+
+    <p>
+        The <code>font-family</code> declaration specifies the name of the font you’ll use in your CSS. With Google Fonts, the hosting of the font files is handled for you, making implementation straightforward.
+    </p>
+
+    <ol start="4">
+        <li>To see the font in action, apply it to any text element. For example, to set the <strong>Monoton</strong> font to your body text:</li>
+    </ol>
+
+    <pre>
+    body {
+        font-family: 'Monoton', cursive;
+    }
+    </pre>
+
+    <p>
+        Now you can see how the <strong>Monoton</strong> font styles your webpage, giving it a distinctive and vibrant look.
+    </p>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
